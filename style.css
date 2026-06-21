@@ -280,3 +280,41 @@ body{
         width: 95%;
     }
 }
+
+/*agenda*/
+
+.logo_agenda{
+    max-height: 90%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    display: block;
+    background-image: url("https://i.pinimg.com/1200x/34/a7/d6/34a7d6c63845e5e32035ec4c6435614c.jpg");
+}
+
+table {
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+    display: flex;        
+}
+
+th {
+    padding: 12px;
+    border-radius: 8px;
+    background-image: url("https://i.pinimg.com/1200x/34/a7/d6/34a7d6c63845e5e32035ec4c6435614c.jpg");
+    border: 1px solid rgb(53,53,53);
+    width: 160px;
+    height: 90px;
+    text-shadow: 0.5px 0.5px 0px rgba(255,255,255,0.5);
+}
+
+td{
+    padding: 10px;
+    border: none;
+    
+}
+
+th:hover {
+    background-image: url("https://i.pinimg.com/1200x/9c/6a/47/9c6a47501cad39826bee7cd6a79d61a2.jpg");
+}
