@@ -165,14 +165,15 @@ body{
  /*jingle bel jingle bel rock*/
 .jingle-container{
     width: 100%;
-    min-height: 550px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 30px 20px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    margin-top: 100px;
 }
-
 #vinil{
     width: 300px;
     height: 300px;
@@ -219,6 +220,47 @@ body{
     gap: 20px;
 }
 
+.letra-box-inline{
+    position: relative;
+}
+
+.letra-box-inline summary{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    font-size: 28px;
+}
+
+.letra-box-inline summary::-webkit-details-marker{
+    display: none;
+}
+
+.letra-box-inline .letra-conteudo{
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+
+    width: 350px;
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    background: white;
+    color: black;
+
+    padding: 15px;
+    border-radius: 10px;
+
+    text-align: center;
+    z-index: 1000;
+}
+
 .btn-player{
     width: 60px;
     height: 60px;
@@ -235,48 +277,6 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.letra-box{
-    width:420px;
-    max-width:95%;
-    margin-top:20px;
-}
-
-.letra-box summary{
-    background:white;
-    color:black;
-
-    padding:12px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    text-align:center;
-
-    font-size:22px;
-
-    list-style:none;
-}
-
-.letra-box summary::-webkit-details-marker{
-    display:none;
-}
-
-.letra-conteudo{
-    background:white;
-
-    color:black;
-
-    padding:20px;
-
-    margin-top:10px;
-
-    border-radius:8px;
-
-    text-align:center;
-
-    line-height:1.6;
-}
 
 .girando{
     animation: girar 4s linear infinite;
