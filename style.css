@@ -332,6 +332,93 @@ body{
     }
 }
 
+/* comtatu*/
+
+.contato-container{
+    width: 700px;
+    max-width: 95%;
+    margin: 60px auto;
+    background-image: url("https://thumbs.dreamstime.com/b/perfect-vector-lego-background-closeup-plastic-gloss-construction-lego-block-black-perfect-vector-background-closeup-plastic-108441672.jpg");
+    border-radius: 12px;
+    padding: 35px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+
+.contato-container h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+    text-shadow:2px 2px black;
+}
+
+.contato-container p{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.contato-container form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contato-container label{
+    font-size:24px;
+    margin-top:15px;
+    margin-bottom:8px;
+}
+
+.contato-container input,
+.contato-container textarea{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contato-container textarea{
+    resize:none;
+}
+
+.contato-container button{
+
+    margin-top:25px;
+    padding:18px;
+    border:none;
+    border-radius:10px;
+
+    background:#FFD500;
+    color:black;
+
+    font-size:28px;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.contato-container button:hover{
+
+    transform:scale(1.05);
+    background:#ffea70;
+}
+
+#mensagem{
+    margin-top:20px;
+    text-align:center;
+    color:#00cc66;
+    font-weight:bold;
+}
+
+#imagem{
+    display:none;
+    margin:20px auto;
+    border-radius:10px;
+}
+
 
 /*agenda*/
 
