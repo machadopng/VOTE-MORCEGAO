@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Batman LEGO Presidente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png"
+                alt="Logo" class="logo_partido">
+        </div>
+
+        <div class="main-wrapper">
+
+            <div class="sidebar">
+
+                <div class="boxes">
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="historia.html">História</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="propostas.html">Propostas</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="agenda.html">Agenda</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="album.html">Álbum</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="jingle.html">Jingle</a>
+                    </div>
+
+                    <div class="side-box">
+                        <img class="side-box-icon" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+                        <a href="contato.html">Contato</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="contato-container">
+
+                    <h1>📞 Cadastro de Apoiadores</h1>
+
+                    <p>
+                        Preencha todos os campos para participar da campanha do Batman LEGO.
+                    </p>
+
+                    <div id="area-formulario">
+                        <form id="formContato" onsubmit="return processarFormulario();">
+
+                            <label>Nome Completo</label>
+                            <input type="text" id="nome" required placeholder="Digite seu nome">
+
+                            <label>Data de nascimento</label>
+                            <input type="date" id="nascimento" required>
+
+                            <label>E-mail</label>
+                            <input type="email" id="email" required placeholder="Digite seu e-mail">
+
+                            <label>Telefone</label>
+                            <input type="tel" id="telefone" required placeholder="(00) 00000-0000">
+
+                            <label>Senha</label>
+                            <input type="password" id="senha" required minlength="6">
+
+                            <label>Comentários</label>
+                            <textarea id="comentarios" required></textarea>
+
+                            <button type="submit">
+                                Enviar Cadastro 🦇
+                            </button>
+
+                        </form>
+                        <p id="mensagem"></p>
+
+                        <img id="imagem" src="" style="display:none; width:300px; margin:20px auto; display:block;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+    <script>
+
+        new FroalaEditor('#comentarios');
+
+        let nome_elem = document.querySelector("#nome");
+let email_elem = document.querySelector("#email");
+let mensagem_elem = document.querySelector("#mensagem");
+let imagem_elem = document.querySelector("#imagem");
+
+       function processarFormulario(){
+
+    let nome = nome_elem.value;
+    let email = email_elem.value;
+
+    if(nome === ""){
+        mensagem_elem.innerHTML = "Informe o nome!";
+        return false;
+    }
+
+    if(email === ""){
+        mensagem_elem.innerHTML = "Informe o e-mail!";
+        return false;
+    }
+
+    mensagem_elem.innerHTML =
+        "<h2>Formulário enviado com sucesso!</h2>";
+
+    imagem_elem.src =
+        "https://media1.tenor.com/m/V30K6aGxJSYAAAAC/stunned-wow.gif";
+
+    imagem_elem.style.display = "block";
+
+    return false;
+}
+    </script>
+
+</body>
+
+</html>
+
+```
