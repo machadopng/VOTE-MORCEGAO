@@ -1,23 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fira+Code:wght@300..700&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Mynerve&family=Tiny5&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bangers", cursive;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body{
-    background-color: rgb(42,42,42);
+body {
+    background-color: rgb(42, 42, 42);
     background-image: url(https://i.pinimg.com/736x/0a/6b/7f/0a6b7fcfce994972af39a98665896daf.jpg);
     background-repeat: repeat;
 }
 
-.container{
+.container {
     width: 95%;
     max-width: 1800px;
     min-height: 100vh;
     margin: 20px auto;
-    border: 5px solid rgb(53,53,53);
+    border: 5px solid gold;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -25,19 +28,17 @@ body{
 }
 
 
-.header{
+.header {
     height: 130px;
-    background-image: url(https://cdn.vectorstock.com/i/500p/16/88/black-plastic-construction-plate-closeup-vector-45401688.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-bottom: solid gold 5px;
 }
 
-.logo_partido{
+.logo_partido {
     max-height: 90%;
     max-width: 90%;
     width: auto;
@@ -54,63 +55,68 @@ body{
 }
 
 
-.sidebar{
-    width: 240px; 
+.sidebar {
+    width: 240px;
     min-width: 240px;
     background-image: url(https://cdn.vectorstock.com/i/500p/16/88/black-plastic-construction-plate-closeup-vector-45401688.jpg);
     background-repeat: repeat;
+    border-right: solid 5px gold;
 }
 
-.boxes{
+.boxes {
     width: 100%;
     padding: 15px 10px;
 }
 
 
-.side-box{
+.side-box {
     display: flex;
     align-items: center;
     gap: 12px;
-    background-image: url(https://thumbs.dreamstime.com/b/perfect-vector-lego-background-closeup-plastic-gloss-construction-lego-block-grey-perfect-vector-background-closeup-plastic-108441628.jpg);
+    background-image: url(https://i.pinimg.com/736x/35/6b/ba/356bba2ab4447caae13305675ccc3dfc.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     border-radius: 8px;
     margin-bottom: 12px;
     padding: 12px 15px;
     text-decoration: none;
-    box-shadow: inset 0 0 4px rgba(255,255,255,0.4), 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
+
 }
 
-.side-box:hover{
+.side-box:hover {
     transform: translateY(-2px);
-    box-shadow: inset 0 0 4px rgba(255,255,255,0.4), 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.4), 0 4px 8px rgba(0, 0, 0, 0.5);
+
 }
 
-.side-box-icon{
+.side-box-icon {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    filter: drop-shadow(1px 1px 1px rgba(255,255,255,0.5));
+    filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.5));
 }
 
-.side-box a{
-    color:black;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    text-shadow:0.5px 0.5px 0 rgba(255,255,255,.5);
+a {
+    font-size: 23px;
+    color: #000000;
 }
 
-.content{
-    flex: 1; 
-    background-image: url(https://cdn.vectorstock.com/i/500p/16/88/black-plastic-construction-plate-closeup-vector-45401688.jpg);
+a:hover {
+    font-size: 23px;
+    color: #2c2c2c;
+}
+
+.content {
+    flex: 1;
+    background-color: #151515;
     background-repeat: repeat;
     background-size: 250px;
 }
 
 
-.content-banner{
+.content-banner {
     height: 350px;
     background-image: url(https://i.pinimg.com/736x/42/42/85/4242852ca558670e2a4963f78aec2502.jpg);
     background-position: center;
@@ -120,7 +126,7 @@ body{
     display: flex;
 }
 
-.banner-left{
+.banner-left {
     width: 50%;
     height: 100%;
     display: flex;
@@ -128,42 +134,70 @@ body{
     align-items: center;
 }
 
-.banner-dave-img{
+.banner-dave-img {
     height: 100%;
     width: auto;
     object-fit: contain;
     display: block;
+
 }
 
-.banner-right{
+.banner-dave-img:hover {
+    filter: drop-shadow(10px 10px 15px rgb(255, 230, 1));
+}
+
+.banner-right {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 5vh;
+    font-size: 40px;
     font-weight: bolder;
     padding: 20px;
+    color: gold;
+    text-shadow: 2px 2px 4px rgb(255, 238, 0);
 }
 
-.content-barra{
+.content-barra {
     height: 100px;
-    background-image: url(https://cdn.vectorstock.com/i/500p/16/88/black-plastic-construction-plate-closeup-vector-45401688.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(32, 32, 32);
+    border-bottom: solid gold 5px;
+
+    border-top: solid gold 5px;
 }
 
 
-.content-text{
-    min-height: 500px;
-    background-image: url(https://i.pinimg.com/736x/0a/6b/7f/0a6b7fcfce994972af39a98665896daf.jpg);
+.content-text {
+    height: inherit;
+
+    background-color: rgb(0, 0, 0);
     padding: 20px;
+    min-height: 500px;
 }
 
- /*jingle bel jingle bel rock*/
-.jingle-container{
+.batfamilia {
+    width: fit-content;
+    float: left;
+}
+
+.texto_inicio {
+    width: 50%;
+    float: left;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.batfamilia img {
+
+    height: 400px;
+    width: auto;
+    border: solid 5px gold;
+}
+
+/*jingle bel jingle bel rock*/
+.jingle-container {
     width: 100%;
     min-height: 700px;
     display: flex;
@@ -174,7 +208,8 @@ body{
     padding-bottom: 120px;
     margin-top: 100px;
 }
-#vinil{
+
+#vinil {
     width: 300px;
     height: 300px;
     object-fit: contain;
@@ -182,18 +217,18 @@ body{
     filter: drop-shadow(0 0 15px black);
 }
 
-.player-box{
+.player-box {
     width: 420px;
     max-width: 95%;
     background-image: url(https://thumbs.dreamstime.com/b/perfect-vector-lego-background-closeup-plastic-gloss-construction-lego-block-black-perfect-vector-background-closeup-plastic-108441672.jpg);
-    border-color: rgb(53,53,53);
+    border-color: rgb(53, 53, 53);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0,0,0,.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
 }
 
-.player-title{
+.player-title {
     color: #ffffff;
     font-size: 30px;
     font-weight: bold;
@@ -201,30 +236,30 @@ body{
     margin-bottom: 15px;
 }
 
-#progresso{
+#progresso {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.tempo{
+.tempo {
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 15px;
 }
 
-.controls{
+.controls {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.letra-box-inline{
+.letra-box-inline {
     position: relative;
 }
 
-.letra-box-inline summary{
+.letra-box-inline summary {
     width: 60px;
     height: 60px;
     border-radius: 10px;
@@ -237,11 +272,11 @@ body{
     font-size: 28px;
 }
 
-.letra-box-inline summary::-webkit-details-marker{
+.letra-box-inline summary::-webkit-details-marker {
     display: none;
 }
 
-.letra-box-inline .letra-conteudo{
+.letra-box-inline .letra-conteudo {
     position: absolute;
     bottom: 75px;
     right: 0;
@@ -261,7 +296,7 @@ body{
     z-index: 1000;
 }
 
-.btn-player{
+.btn-player {
     width: 60px;
     height: 60px;
     border: none;
@@ -272,69 +307,74 @@ body{
     transition: .3s;
 }
 
-.btn-player:hover{
+.btn-player:hover {
     transform: scale(1.1);
     background-color: rgb(255, 255, 255);
 }
 
 
-.girando{
+.girando {
     animation: girar 4s linear infinite;
 }
 
-@keyframes girar{
-    from{ transform: rotate(0deg); }
-    to{ transform: rotate(360deg); }
-}
-
-@media(max-width: 900px){
-    .main-wrapper {
-        flex-direction: column; 
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
     }
 
-    .sidebar{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 900px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
         width: 100%;
         min-width: 100%;
     }
 
-.content{
-    flex: 1;
+    .content {
+        flex: 1;
 
-    background-image: url(https://cdn.vectorstock.com/i/500p/16/88/black-plastic-construction-plate-closeup-vector-45401688.jpg);
-    background-repeat: repeat;
-    background-size: 250px;
+        background-image: url(https://cdn.vectorstock.com/i/500p/16/88/black-plastic-construction-plate-closeup-vector-45401688.jpg);
+        background-repeat: repeat;
+        background-size: 250px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    .content-banner{
+    .content-banner {
         flex-direction: column;
         height: auto;
         min-height: 350px;
     }
 
     .banner-left,
-    .banner-right{
+    .banner-right {
         width: 100%;
         height: auto;
     }
 
-    .banner-dave-img{
+    .banner-dave-img {
         width: 80%;
         height: auto;
         margin: 20px auto;
     }
 
-    .player-box{
+    .player-box {
         width: 95%;
     }
 }
 
 /* comtatu*/
 
-.contato-container{
+.contato-container {
     width: 700px;
     max-width: 95%;
     margin: 60px auto;
@@ -342,87 +382,87 @@ body{
     border-radius: 12px;
     padding: 35px;
     color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
 }
 
-.contato-container h1{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:15px;
-    text-shadow:2px 2px black;
+.contato-container h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px black;
 }
 
-.contato-container p{
-    text-align:center;
-    font-size:22px;
-    margin-bottom:30px;
+.contato-container p {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 
-.contato-container form{
-    display:flex;
-    flex-direction:column;
+.contato-container form {
+    display: flex;
+    flex-direction: column;
 }
 
-.contato-container label{
-    font-size:24px;
-    margin-top:15px;
-    margin-bottom:8px;
+.contato-container label {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
 .contato-container input,
-.contato-container textarea{
+.contato-container textarea {
 
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:8px;
-    font-size:18px;
-    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.contato-container textarea{
-    resize:none;
+.contato-container textarea {
+    resize: none;
 }
 
-.contato-container button{
+.contato-container button {
 
-    margin-top:25px;
-    padding:18px;
-    border:none;
-    border-radius:10px;
+    margin-top: 25px;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
 
-    background:#FFD500;
-    color:black;
+    background: #FFD500;
+    color: black;
 
-    font-size:28px;
-    cursor:pointer;
+    font-size: 28px;
+    cursor: pointer;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.contato-container button:hover{
+.contato-container button:hover {
 
-    transform:scale(1.05);
-    background:#ffea70;
+    transform: scale(1.05);
+    background: #ffea70;
 }
 
-#mensagem{
-    margin-top:20px;
-    text-align:center;
-    color:#00cc66;
-    font-weight:bold;
+#mensagem {
+    margin-top: 20px;
+    text-align: center;
+    color: #00cc66;
+    font-weight: bold;
 }
 
-#imagem{
-    display:none;
-    margin:20px auto;
-    border-radius:10px;
+#imagem {
+    display: none;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 
 /*agenda*/
 
-.logo_agenda{
+.logo_agenda {
     max-height: 90%;
     max-width: 90%;
     width: auto;
@@ -435,25 +475,126 @@ table {
     width: 90%;
     border-radius: 8px;
     border: none;
-    display: flex;        
+    display: flex;
 }
 
 th {
     padding: 12px;
     border-radius: 8px;
     background-image: url("https://i.pinimg.com/1200x/34/a7/d6/34a7d6c63845e5e32035ec4c6435614c.jpg");
-    border: 1px solid rgb(53,53,53);
+    border: 1px solid rgb(53, 53, 53);
     width: 160px;
     height: 90px;
-    text-shadow: 0.5px 0.5px 0px rgba(255,255,255,0.5);
+    text-shadow: 0.5px 0.5px 0px rgba(255, 255, 255, 0.5);
 }
 
-td{
+td {
     padding: 10px;
     border: none;
-    
+
 }
 
 th:hover {
     background-image: url("https://i.pinimg.com/1200x/9c/6a/47/9c6a47501cad39826bee7cd6a79d61a2.jpg");
+}
+
+/* historia pra boi dormir  */
+.caixahistoria {
+    width: calc(95% - 240px);
+    height: inherit;
+    background-color: #000000;
+    border: solid gold 5px;
+    border-radius: 30px;
+    float: left;
+    padding: 5%;
+    margin: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+
+}
+
+.img-meio-texto-lf {
+
+    float: left;
+
+
+    width: 120px;
+    height: auto;
+
+
+    margin-right: 15px;
+    margin-bottom: 10px;
+
+
+    position: static;
+
+}
+
+.img-meio-texto-rt {
+
+    float: right;
+
+
+    width: 180px;
+    height: auto;
+
+
+    margin-right: 15px;
+    margin-bottom: 10px;
+
+
+    position: static;
+
+}
+
+.direitos {
+    height: 40px;
+
+    text-align: center;
+
+    position: static;
+    background-color: #2c2c2c;
+    border-top: solid gold 2px;
+}
+.caixasdeministros{
+    float: left;
+    background-color: #000000;
+    border: solid 3px blue ;
+
+}
+.caixadeministro{
+    background-color: #000000;
+    width: 100%;
+   height: 26vh;
+    border-bottom: solid 3px blue;
+    padding: 2%;
+    float: left;
+}
+.fotodoministro
+{
+    background-color: rgba(0, 255, 255, 0);
+    width: 14%;
+    height: 100%;
+    float: left;
+    padding: 1%;
+
+    
+}
+.fotodoministro img{
+    width: auto;
+    height: 100%;
+
+}
+.textodoministro{
+    background-color: rgb(17, 17, 17);
+    width: 86%;
+     min-height: 100%;
+     float: left;
+     border: solid 3px blue;
+     color: #ffffff;
+     padding: 2px;
+
+}
+.textodoministro h2{
+    font-size: larger;
 }
